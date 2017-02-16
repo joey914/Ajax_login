@@ -17,6 +17,7 @@ $(document).ready(function() {
                 success: function(data)     {         //data - response from server
                 if (data.success == true) {
                     alert("로그인 성공");
+                    location.href="http://rrgg.kr";
                 } else {
                     alert("로그인 실패");
                     console.log(data);
