@@ -2,6 +2,10 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
         @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
         * {
@@ -156,6 +160,9 @@
                 <input placeholder="나이" type="text" tabindex="1" required autofocus id="login_age">
             </fieldset>
             <fieldset>
+                <input placeholder="전화번호(-빼고 입력)" type="text" tabindex="1" required autofocus id="login_phone">
+            </fieldset>
+            <fieldset>
                 <input placeholder="ID" type="text" tabindex="2" required id="login_id">
             </fieldset>
             <fieldset>
@@ -165,13 +172,16 @@
                 <input placeholder="PW (재입력)" type="password" tabindex="4" required id="login_rpw">
             </fieldset>
             <fieldset>
-                <div id="check">남성 :<input type="radio" name="gender" value="남"> 여성 : <input type="radio" name="gender" value="여">
-                </div>
+                <label class="checkbox-inline">남성 :<input type="radio" name="gender" value="남"> 여성 : <input type="radio" name="gender" value="여">
+                </label>
             </fieldset>
             <fieldset>
-                <select name="sido1" id="sido1"></select>
-                <select name="gugun1" id="gugun1"></select>
+                <select class="form-control" name="sido1" id="sido1"></select>
+                <select class="form-control" name="gugun1" id="gugun1"></select>
             </fieldset>
+            <label for="exampleInputFile">파일 업로드
+    <input type="file" id="exampleInputFile">
+    </label>
             <fieldset>
                 <textarea placeholder="이상형" tabindex="5" required id="login_ideal"></textarea>
             </fieldset>

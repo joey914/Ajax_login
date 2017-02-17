@@ -8,6 +8,7 @@ $(document).ready(function() {
         var useridle = document.getElementById("login_ideal").value;
         var username = document.getElementById("login_username").value;
         var genderobj = document.getElementsByName("gender");
+        var userphone = document.getElementById("login_phone").value;
         var userlocale =$("#sido1 option:selected").text()+" "+$("#gugun1 option:selected").text();
         var usergender;
         var userage = document.getElementById("login_age").value;
@@ -29,7 +30,7 @@ $(document).ready(function() {
                 alert("여");
                 usergender = "여";
             }
-            var regdata = "name=" + username + "&id=" + userid + "&password=" + userpw + "&mean=" + usermean + "&gender=" + usergender + "&ideal_type=" + useridle + "&age=" +userage+ "&city" +userlocale;
+            var regdata = "name=" + username + "&id=" + userid + "&password=" + userpw + "&mean=" + usermean + "&gender=" + usergender + "&ideal_type=" + useridle + "&age=" +userage+ "&city=" +userlocale+ "&phonenum=" +userphone;
             $.ajax({        
                 type: "POST",
                 url: "http://soylatte.kr:4848/register",
